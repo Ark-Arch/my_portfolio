@@ -11,5 +11,7 @@ def home():
 def my_projects():
     return render_template("my_projects.html")
 
-
+@routes.route('/fun-gallery')
+def fun_gallery():
+    return render_template("fun_gallery.html")
 

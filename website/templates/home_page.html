@@ -1,13 +1,41 @@
 {% extends "index.html" %}
 <!------------------------------------------------------------------------>
 
-{% block right_column %}
-<div class="right-column">
-	<div class="about-me">
-    		<h2> About Me </h2>
-    		<p>I am a growing Python Developer with a strong interest in devOps and how the cloud works!</p>
-		<p><span class="blink">Fun Fact</span>: Based off my background in Mechatronics Engineering, my <span>career end goal</span> is to apply my dev and cloud skills into the world of robotics and machine learning</p>
-		<a href="/my-projects" class="button-pages">My Projects</a>
-		<a href="" class="button-pages">Fun Pictures</a>
+{% block content %}
+	<div class="intro-wrapper intro-wrapper-2">
+		<div class="nav-wrapper">
+		    <div class="dots-wrapper">
+			<div id="dot-1" class="browser-dot"></div>
+			<div id="dot-2" class="browser-dot"></div>
+			<div id="dot-3" class="browser-dot"></div>
+		    </div>
+		    <ul id="navigation">
+			<!-- <li><a href="#"> <img src="./images-icons/git_icon.png" alt="gitHub"> </a></li> -->
+			<li><a href="mailto:davidagbemuko.ad@gmail.com" target="_blank">GMAIL</a></li>
+			<li><a href="https://github.com/Ark-Arch" target="_blank">GITHUB</a></li>
+			<li><a href="#">MESSAGE</a></li>
+		    </ul>
+		</div>
+		<div class="left-column">
+		    <img id="profile_pic" src="../static/images/david-agbemuko.png" alt="david-agbemuko" width="200px" height="267px">
+		    <h5 style="text-align: center; line-height: 0;">DOWNLOAD RESUME </h5>
+		    <div id="theme-options-wrapper">
+			<div id="light-mode" class="theme-dot"></div>
+			<div id="blue-mode" class="theme-dot"></div>
+			<div id="green-mode" class="theme-dot"></div>
+			<div id="purple-mode" class="theme-dot"></div>
+		    </div>
+		    <p id="settings-note">*Theme settings will be saved for <br>your next visit</p>
+		</div>
+		<div class="right-column">
+			<div class="about-me">
+		    		<h2> About Me </h2>
+		    		<p>I am a growing Python Developer with a strong interest in devOps and how the cloud works!</p>
+		    		<p> want to SEE a list of my skills ;) </p>
+				<p><span class="blink">Fun Fact</span>: Based off my background in Mechatronics Engineering, my <span>career end goal</span> is to apply my dev and cloud skills into the world of robotics and machine learning</p>
+				<a href="/my-projects" class="button-pages">My Projects</a>
+				<a href="/fun-gallery" class="button-pages">Fun Pictures</a>
+			</div>
+		</div>    	
 	</div>
-</div>    	{% endblock %}
+{% endblock %}
