@@ -1,0 +1,54 @@
+{% extends "home_page.html"%}
+
+<!--------------------------------------------------------------------------->
+
+{%block aboutme_link%}
+<li><a href="/" >ABOUT-ME</a></li>
+{%endblock%}
+{%block skills_link%}{% endblock %}
+
+{% block my_skills %}
+
+<div class="container">
+	<h2>Skills</h2>
+	<div class="category">
+		<h3>Web Development</h3>
+		<div class="skills">
+			<div class="skill">Flask Web Framework</div>
+			<div class="skill">React</div>
+			<div class="skill">html</div>
+			<div class="skill">css</div>
+			<div class="skill">javascript</div>
+		</div>
+	</div>
+
+	<div class="category">
+		<h3>Databases</h3>
+		<div class="skills">
+			<div class="skill">mySQL</div>
+			<div class="skill">PostgreSQL</div>
+		</div>
+	</div>
+
+	<div class="category">
+		<h3>DevOps</h3>
+		<div class="skills">
+			<div class="skill">Linux</div>
+			<div class="skill">Bash scripting</div>
+			<div class="skill">AWS cloud products such as AWS Elastic Compute Cloud (ec2 instances)</div>
+			<div class="skill">Docker</div>
+		</div>
+	</div>		
+	
+	<div class="category">
+		<h3>Tools</h3>
+		<div class="skills">
+			<div class="skill">Postman</div>
+			<div class="skill">Git and GitHub</div>
+			<div class="skill">Lucid Charts</div>
+		</div>
+	</div>
+	
+</div>
+
+{% endblock %}

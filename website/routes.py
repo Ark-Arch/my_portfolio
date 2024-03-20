@@ -15,3 +15,7 @@ def my_projects():
 def fun_gallery():
     return render_template("fun_gallery.html")
 
+@routes.route('/my-skills')
+def my_skills():
+    return render_template("my_skills.html")
+

@@ -10,6 +10,11 @@
 			<div id="dot-3" class="browser-dot"></div>
 		    </div>
 		    <ul id="navigation">
+		        {%block aboutme_link%}{%endblock%}
+		        {%block projects_link%}<li><a href="/my-projects" >MY-PROJECTS</a></li>{%endblock%}
+		       	{%block skills_link%}<li><a href="/my-skills" >MY-SKILLS</a></li>{%endblock%}
+		       	{%block fun_link %}<li><a href="/fun-gallery" >FUN-PICTURES</a></li>{%endblock%}
+		       	
 			<!-- <li><a href="#"> <img src="./images-icons/git_icon.png" alt="gitHub"> </a></li> -->
 			<li><a href="mailto:davidagbemuko.ad@gmail.com" target="_blank">GMAIL</a></li>
 			<li><a href="https://github.com/Ark-Arch" target="_blank">GITHUB</a></li>
@@ -28,14 +33,16 @@
 		    <p id="settings-note">*Theme settings will be saved for <br>your next visit</p>
 		</div>
 		<div class="right-column">
+			{% block my_skills%}
 			<div class="about-me">
 		    		<h2> About Me </h2>
 		    		<p>I am a growing Python Developer with a strong interest in devOps and how the cloud works!</p>
-		    		<p> want to SEE a list of my skills ;) </p>
+				<p class="type-skills"> <a href="/my-skills">click here to have a peep at what I can do? ;) </a></p>
 				<p><span class="blink">Fun Fact</span>: Based off my background in Mechatronics Engineering, my <span>career end goal</span> is to apply my dev and cloud skills into the world of robotics and machine learning</p>
 				<a href="/my-projects" class="button-pages">My Projects</a>
 				<a href="/fun-gallery" class="button-pages">Fun Pictures</a>
 			</div>
+			{% endblock %}
 		</div>    	
 	</div>
 {% endblock %}
