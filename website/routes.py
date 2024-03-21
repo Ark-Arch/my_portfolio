@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, send_from_directory
 
 
 routes = Blueprint('routes', __name__)
@@ -18,4 +18,8 @@ def fun_gallery():
 @routes.route('/my-skills')
 def my_skills():
     return render_template("my_skills.html")
+
+@routes.route('/download/resume')
+def download_resume():
+    return send_from_directory('static', "david_agbemuko_c.v.pdf", as_attachment=True)
 

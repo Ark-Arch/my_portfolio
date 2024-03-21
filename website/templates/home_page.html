@@ -2,7 +2,7 @@
 <!------------------------------------------------------------------------>
 
 {% block content %}
-	<div class="intro-wrapper intro-wrapper-2">
+	{% block no_grid %}<div class="intro-wrapper intro-wrapper-2">{%endblock%}
 		<div class="nav-wrapper">
 		    <div class="dots-wrapper">
 			<div id="dot-1" class="browser-dot"></div>
@@ -18,12 +18,13 @@
 			<!-- <li><a href="#"> <img src="./images-icons/git_icon.png" alt="gitHub"> </a></li> -->
 			<li><a href="mailto:davidagbemuko.ad@gmail.com" target="_blank">GMAIL</a></li>
 			<li><a href="https://github.com/Ark-Arch" target="_blank">GITHUB</a></li>
-			<li><a href="#">MESSAGE</a></li>
 		    </ul>
 		</div>
+
+		{%block project_orbiting%}
 		<div class="left-column">
 		    <img id="profile_pic" src="../static/images/david-agbemuko.png" alt="david-agbemuko" width="200px" height="267px">
-		    <h5 style="text-align: center; line-height: 0;">DOWNLOAD RESUME </h5>
+		    <h5 style="text-align: center; line-height: 0;"><a href="/download/resume">DOWNLOAD RESUME</a></h5>
 		    <div id="theme-options-wrapper">
 			<div id="light-mode" class="theme-dot"></div>
 			<div id="blue-mode" class="theme-dot"></div>
@@ -31,7 +32,9 @@
 			<div id="purple-mode" class="theme-dot"></div>
 		    </div>
 		    <p id="settings-note">*Theme settings will be saved for <br>your next visit</p>
+
 		</div>
+
 		<div class="right-column">
 			{% block my_skills%}
 			<div class="about-me">
@@ -43,6 +46,7 @@
 				<a href="/fun-gallery" class="button-pages">Fun Pictures</a>
 			</div>
 			{% endblock %}
-		</div>    	
+		</div>
+		{% endblock %}    	
 	</div>
 {% endblock %}
