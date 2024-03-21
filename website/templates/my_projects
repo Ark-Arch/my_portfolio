@@ -1,0 +1,20 @@
+{% extends "home_page.html" %}
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+{% block project_orbiting %}
+        <div class="orbit">
+            <div class="project" style="transform: rotate(0deg);">
+                <img src="project1.jpg" alt="Project 1">
+            </div>
+            <div class="project" style="transform: rotate(120deg);">
+                <img src="project2.jpg" alt="Project 2">
+            </div>
+            <div class="project" style="transform: rotate(240deg);">
+                <img src="project3.jpg" alt="Project 3">
+            </div>
+        </div>
+{% endblock %}
+
+{% block project_description %}
+{% endblock %}
