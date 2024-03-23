@@ -21,5 +21,5 @@ def my_skills():
 
 @routes.route('/download/resume')
 def download_resume():
-    return send_from_directory('static', "david_agbemuko_c.v.pdf", as_attachment=True)
+    return send_from_directory('static', "david_agbemuko_c.v.docx", as_attachment=True)
 
