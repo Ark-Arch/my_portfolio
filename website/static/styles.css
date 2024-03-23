@@ -451,7 +451,7 @@ THINK OUT HOW TO GET THIS FEATURE WOKING
 */
 
 .projects {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ddd;
@@ -464,12 +464,15 @@ THINK OUT HOW TO GET THIS FEATURE WOKING
     margin-bottom: 10px;
 }
 .project img {
-    flex: 0 0 100px; /* Image size */
+    flex: 0 0 400px; /* Image size */
     margin-right: 10px;
     border-radius: 5px;
 }
 .project-content {
     flex: 1;
+    
+    text-align:center;
+    
 }
 .project h3 {
     margin-bottom: 5px;
